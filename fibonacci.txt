@@ -1,0 +1,25 @@
+#Johns Oberholtzer and Robison
+List[Int] fibonacci(Int size){				#Definitions begin with their output
+	if (size == 1){							#scala-like if statements
+		return List[1]
+	}
+	elif(size == 2){
+		return List[1,1]
+	}
+	else{
+		Int low = 1							#variable declarations are begun with their type
+		Int high = 1
+		Int temp = 0
+		Int curr = 0
+		List[Int] sol = List[1,1]
+		while (curr<size){
+			sol.append(low+high)
+			curr+=1
+			temp=low
+			low = high
+			high = temp+low
+		}
+	}
+}
+
+			

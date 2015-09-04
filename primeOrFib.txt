@@ -1,0 +1,42 @@
+#Johns Oberholtzer and Robison
+import fibonacci.txt						#Shows import
+
+Null primeOrFib(Int last){
+	List[Int] fiblist = fibonacci(last)
+	Str output = ""
+	Int cur = 1
+	while (cur <= last){
+		output = cur.toString
+		Bool isFib=False
+		if(fiblist.contains(cur)){
+			output += (" is a fibonacci number. \n")
+			isFib=True
+		}
+		if(checkPrime(cur)){				#shows use of helper functions
+			if (isFib){
+				output += cur.toString+" is a prime number. \n"
+			} else{
+				output +=" is a prime number. \n"
+			}
+		} else {
+			if (!isFib){
+				output+= " is neither prime nor fibonacci. \n"
+			}
+		}
+		print(output)
+		cur++	
+	}
+	bool checkPrime(Int var){
+		Int try = 1
+		while (try <= last){
+			if (var%try == 0){
+				return False
+			}
+			return true
+		}
+	}
+}	
+			
+	
+	
+

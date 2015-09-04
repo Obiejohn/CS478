@@ -1,0 +1,13 @@
+#Johns Oberholtzer and Robison
+Int pachinko(List[List[Int]] board){		#This program shows recursion
+	Int pos(Int x, Int y){
+		try{								#Also shows try and except
+			Int maxNum = board[x][y] + (pos(x+1,y) max pos(x,y+1) )
+		} except {
+			Int maxNum = 0
+		}
+		return maxNum
+	}
+	pos(0,0)
+}
+			

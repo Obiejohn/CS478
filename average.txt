@@ -1,0 +1,26 @@
+#Johns Oberholtzer and Robison
+
+Char average(List[Int] grades){
+	Int size = grades.len
+	Int sum = 0
+	for (i in grades){		#shows scala style for loops
+		sum += i
+	}						#shows use of curly braces for begin/end statements
+	Int ans = sum/size
+	if (ans >= 90){			#shows mathematical comparisons
+	return "A"
+	}	
+	elif (ans >= 80){
+		return "B"
+	}
+	elif (ans >= 70){
+		return "C"
+	}
+	elif (ans >= 65){
+		return "D"
+	}
+	else{
+		return "F"			#shows my grade
+	}
+}
+	
